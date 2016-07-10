@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8" />
+		<title>Form POC</title>     
+    </head>		
+    <body>
+    
+        <h2>Form POC</h2>
+
+        <form  method="POST" target="_self" action="builder_template.php" enctype="multipart/form-data">
+
+            <p>Input 1 <input name="input1" type="text" /></p>
+            <p>Input 2 <input name="input2" type="text" /></p>
+            <p>Input 3 <input name="input3" type="text" /></p>
+
+            <p> Radio question?
+                <label for="yes">Yes</label><input type="radio" name="radio1" id="yes" value="yes">
+                <label for="no">No</label><input type="radio" name="radio1" id="no" value="no">
+            </p>    
+
+            <p> Image 1 <input name="image1" type="file" /></p>
+            <p> Image 2 <input name="image2" type="file" /></p>
+            <p> Image 3 <input name="image3" type="file" /></p>
+            <p> Image 4 <input name="image4" type="file" /></p>
+                
+            <p>Multiple File Upload (2 max for poc) <input name="images[]" id="filesToUpload" type="file" multiple /></p>
+            <input type="submit" name="submit" value="Submit"/>
+            <!-- may want to use progress element to display progress of upload -->
+        </form>
+    </body>
+</html>
+
